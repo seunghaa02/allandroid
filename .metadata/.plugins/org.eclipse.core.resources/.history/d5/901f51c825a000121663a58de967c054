@@ -1,0 +1,52 @@
+package kr.example.testbutton;
+
+import com.appstudio.android.sample.R;
+import com.appstudio.android.sample.ch_6.OnClickActivity;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class TestbuttonmainActivity extends Activity implements OnClickListener {
+	static final int[] BUTTONS = {
+		R.id.button1,
+		R.id.button2,
+		R.id.button3
+	};
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.testbuttonmain);
+		
+		Button button = (Button) findViewById(R.id.button1);
+		button.setOnClickListener(new OnClickListener() {
+		    public void onClick(View v) {
+		    	Toast.makeText(TestbuttonmainActivity.this, "Button Clicked", Toast.LENGTH_SHORT).show();
+		    	Log.i("Button Event","is Clicked");
+		    }
+		});
+	}
+
+
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch(v.getId()){
+		case R.id.button1:
+			Toast.makeText(TestbuttonmainActivity.this, "가위를 냈습니다.", Toast.LENGTH_SHORT).show();
+			break;
+		case R.id.button2:
+			Toast.makeText(TestbuttonmainActivity.this, "바위를 냈습니다.", Toast.LENGTH_SHORT).show();
+			break;
+		case R.id.button3:
+			Toast.makeText(TestbuttonmainActivity.this, "보를 냈습니다.", Toast.LENGTH_SHORT).show();
+			break;
+		}
+	}
+
+}
