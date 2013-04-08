@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;scrollView/res/layout/activity_scroll_viewmain.xml&apos; to &apos;main.xml&apos;" description="Rename resource &apos;activity_scroll_viewmain.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/activity_scroll_viewmain.xml" name="main.xml" stamp="1365401046392" updateReferences="true"/>
+</session>

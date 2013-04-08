@@ -3,9 +3,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+	<!-- 이미지 경우 용량, 확장자, 네임규칙을 잘 따라야함 -->
     <ImageView android:id="@+id/test_image_view1"
-    		  android:src="@drawable/test_image_view_pic1"
+    		  android:src="@drawable/images"
     		  android:scaleType="center"
     		  android:maxWidth="100px"
     		  android:maxHeight="10px"
