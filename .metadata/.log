@@ -300,3 +300,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-04-08 15:03:24.769
 !MESSAGE Failed to load properties file for project 'scrollView'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-04-08 15:13:25.633
+!MESSAGE Failed to load properties file for project 'BasicWidget'
