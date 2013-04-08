@@ -17,7 +17,7 @@ public class TestbuttonmainActivity extends Activity implements OnClickListener 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.testbuttonmain);
-
+		
 		Button button = (Button) findViewById(R.id.button1);
 		button.setOnClickListener(new OnClickListener() {
 		    public void onClick(View v) {
@@ -44,6 +44,11 @@ public class TestbuttonmainActivity extends Activity implements OnClickListener 
 
 	@Override
 	public void onClick(View v) {
+    	TextView textview = (TextView)findViewById(R.id.test_text_view);
+    	if(v.getId() == ){
+    		
+    	}
+    	textview.setText("가위를 냈습니다.");
 	}
 
 }
